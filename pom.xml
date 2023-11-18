@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <!-- Hilla project from https://github.com/vaadin/skeleton-starter-hilla-react -->
     <groupId>com.maheshbabu11</groupId>
@@ -19,6 +20,17 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.5</version>
     </parent>
+
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -40,6 +52,11 @@
         <dependency>
             <groupId>dev.hilla</groupId>
             <artifactId>hilla-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.experimental.ai</groupId>
+            <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+            <version>0.7.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -68,6 +85,17 @@
                     <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5247</jvmArguments>
                     <wait>500</wait>
                     <maxAttempts>240</maxAttempts>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
+                <configuration>
+                    <buildArgs>
+                        <buildArg>
+                            -H:ReflectionConfigurationFiles=C:\Users\LENOVO\IdeaProjects\ChatGPTClone\src\main\resources\META-INF\reflect-config.json
+                        </buildArg>
+                    </buildArgs>
                 </configuration>
             </plugin>
 
