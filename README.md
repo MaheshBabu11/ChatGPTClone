@@ -1,7 +1,7 @@
 
 ## Crafting your own AI chat app using Hilla and Spring AI
 
-![](https://cdn-images-1.medium.com/max/13824/1*3zeQo8o50EDGuh7mdIFt0A.png)
+![](https://cdn-images-1.medium.com/max/2000/1*dTELupDEJJUGzL04rUiD4g.png)
 
 Artificial intelligence has surpassed its niche to become a fundamental part of our daily lives, revolutionizing the way we engage with technology. The incorporation of powerful AI capabilities within applications has stimulated innovation and revolutionized user experiences in this era of seamless connectivity and rapid improvements.
 
@@ -201,7 +201,7 @@ You will also need to add your OpenAI keys in the application.properties file.
 
     spring.ai.openai.api-key=<Open AI Key>
 
-With all that set and configured, we can run the project. Once the application starts running, you can open it in your browser on port 80 and see it as shown below :
+With all that set and configured, we can run the project. Once the application starts running, you can open it in your browser on port 8080 and see it as shown below :
 
 ![AI Chat app](https://cdn-images-1.medium.com/max/3836/1*mk0-m1AwPFAmoCt0Z_n3rQ.png)
 
