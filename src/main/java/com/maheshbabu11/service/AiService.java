@@ -11,10 +11,11 @@ public class AiService {
     private final AiClient aiClient;
 
     public AiService(AiClient aiClient) {
+
         this.aiClient = aiClient;
     }
 
-        public String chat( String prompt){
+    public String chat(String prompt) {
         return aiClient.generate(prompt);
     }
 }
