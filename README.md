@@ -33,22 +33,23 @@ The Spring AI project provides artifacts in the Spring Milestone Repository. You
 And the Spring Boot Starter depending on if you are using Azure Open AI or Open AI.
 
 * Azure OpenAI
-
-
+```xml
     <dependency>
-            <groupId>org.springframework.experimental.ai</groupId>
-            <artifactId>spring-ai-azure-openai-spring-boot-starter</artifactId>
-            <version>0.7.1-SNAPSHOT</version>
+        <groupId>org.springframework.experimental.ai</groupId>
+        <artifactId>spring-ai-azure-openai-spring-boot-starter</artifactId>
+        <version>0.7.1-SNAPSHOT</version>
     </dependency>
+```
 
 * OpenAI
 
-
+```xml
     <dependency>
-            <groupId>org.springframework.experimental.ai</groupId>
-            <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-            <version>0.7.1-SNAPSHOT</version>
+        <groupId>org.springframework.experimental.ai</groupId>
+        <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+        <version>0.7.1-SNAPSHOT</version>
     </dependency>
+```
 
 We will be using the openai dependency for our use case here so go ahead and add the dependency and reload the project to download all the necessary files. If it’s properly imported you will get a folder structure similar to this:
 
